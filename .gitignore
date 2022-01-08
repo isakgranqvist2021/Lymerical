@@ -1,0 +1,14 @@
+# misc
+.DB_STORE
+
+# client
+client/node_modules
+client/build
+client/.env
+
+# server
+server/bin
+server/obj
+server/Properties/launchSettings.json
+server/wwwroot
+
