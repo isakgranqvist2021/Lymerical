@@ -5,13 +5,22 @@ export const Footer = () => {
 		<Styled.Footer>
 			<Styled.FooterContent>
 				<Styled.Icons>
-					<a aria-label='Instagram link' href='' title='Instagram'>
+					<a
+						aria-label='Instagram link'
+						href='https://instagram.com'
+						title='Instagram'>
 						<img src='/static/icons/instagram.svg' alt='Instagram Icon' />
 					</a>
-					<a aria-label='Linkedin link' href='' title='Linkedin'>
+					<a
+						aria-label='Linkedin link'
+						href='https://linkedin.com'
+						title='Linkedin'>
 						<img src='/static/icons/linkedin.svg' alt='Linkedin Icon' />
 					</a>
-					<a aria-label='Facebook link' href='' title='Facebook'>
+					<a
+						aria-label='Facebook link'
+						href='https://facebook.com'
+						title='Facebook'>
 						<img src='/static/icons/facebook.svg' alt='Facebook Icon' />
 					</a>
 				</Styled.Icons>

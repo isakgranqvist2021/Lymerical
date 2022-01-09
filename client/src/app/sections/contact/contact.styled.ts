@@ -16,12 +16,8 @@ const ContactContainer = styled(Container)`
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 
-	@media (max-width: 1100px) {
-		flex-direction: column;
-	}
-
-	@media (max-width: 600px) {
-		gap: 25px;
+	@media (max-width: 980px) {
+		grid-template-columns: 1fr;
 	}
 `;
 
@@ -81,6 +77,12 @@ const ContactDetails = styled('div')`
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
+
+	@media (max-width: 980px) {
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
 `;
 
 const Group = styled('div')`

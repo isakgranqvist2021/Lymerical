@@ -22,7 +22,12 @@ export const About = () => {
 					lösningar som garanterar dig ett ökat resultat!
 				</Text>
 
-				<Button>Tidigare arbeten</Button>
+				<Button
+					onClick={() => {
+						window.location.hash = '#Portfolio';
+					}}>
+					Tidigare arbeten
+				</Button>
 			</Styled.AboutContainer>
 		</Styled.About>
 	);
