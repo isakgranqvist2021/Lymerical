@@ -6,13 +6,12 @@ const About = styled('div')`
 	padding: 100px 0;
 	display: flex;
 	align-items: center;
-	background-color: #333;
 	flex-direction: column;
 	justify-content: center;
 
 	h2,
 	p {
-		color: #fff;
+		color: #333;
 	}
 
 	p {

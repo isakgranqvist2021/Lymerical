@@ -9,6 +9,7 @@ import {
 	Textarea,
 	Text,
 	Spinner,
+	Icon,
 } from 'components';
 
 import { useContactState } from './contact.helpers';
@@ -34,25 +35,29 @@ export const Contact = () => {
 	return (
 		<Styled.Contact id='Contact' aria-label='Contact section' tabIndex={4}>
 			<Styled.ContactContainer>
-				<Styled.Social aria-label='Social media icons'>
-					<Text
-						variant='h3'
-						text='Du kan även hitta mig här på sociala medier'
-						data-aos='fade-left'
-					/>
-
-					<Styled.SocialIcons data-aos='fade-up'>
-						<a aria-label='Instagram link' href='' title='Instagram'>
-							<img src='/static/icons/instagram.svg' alt='Instagram Icon' />
-						</a>
-						<a aria-label='Linkedin link' href='' title='Linkedin'>
-							<img src='/static/icons/linkedin.svg' alt='Linkedin Icon' />
-						</a>
-						<a aria-label='Email me link' href='' title='Send mail'>
-							<img src='/static/icons/email.svg' alt='Email Icon' />
-						</a>
-					</Styled.SocialIcons>
-				</Styled.Social>
+				<Styled.ContactDetails>
+					<Styled.Group>
+						<Icon icon='phone' />
+						<Styled.Col>
+							<Text text='Telefon:' variant='body2' />
+							<Text text='+46739986177' variant='subtitle2' />
+						</Styled.Col>
+					</Styled.Group>
+					<Styled.Group>
+						<Icon icon='email' />
+						<Styled.Col>
+							<Text text='Email:' variant='body2' />
+							<Text text='email@email.com' variant='subtitle2' />
+						</Styled.Col>
+					</Styled.Group>
+					<Styled.Group>
+						<Icon icon='place' />
+						<Styled.Col>
+							<Text text='Adress:' variant='body2' />
+							<Text text='New York, Manhattan' variant='subtitle2' />
+						</Styled.Col>
+					</Styled.Group>
+				</Styled.ContactDetails>
 				<Styled.Form data-aos='fade-right' aria-label='Contact form'>
 					<FormGroup mb={32}>
 						<Label htmlFor='email'>Email</Label>

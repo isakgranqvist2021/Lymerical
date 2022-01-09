@@ -1,9 +1,13 @@
+import { Container } from 'components';
+
 import { Styled } from './services.styled';
 
 export const Services = () => {
 	return (
 		<Styled.Services id='Services'>
-			<p>Services</p>
+			<Container>
+				<p>Services</p>
+			</Container>
 		</Styled.Services>
 	);
 };
