@@ -7,7 +7,7 @@ const Testimonials = styled('div')`
 	h2 {
 		color: #ed902d;
 		text-align: center;
-		margin-bottom: 150px;
+		margin-bottom: 125px;
 		text-transform: capitalize;
 	}
 	.swiper-button-prev,

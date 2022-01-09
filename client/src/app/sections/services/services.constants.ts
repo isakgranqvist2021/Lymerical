@@ -7,7 +7,7 @@ export const SERVICES = [
 	{
 		icon: './static/icons/video.svg',
 		title: 'Logotyper',
-		body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus aliquam porro dignissimos, sint temporibus! Veritatis repudiandae ullam animi enim?',
+		body: 'Låt oss skapa din logotyp som får ert företag stå ut från mängden. Vi hjälper dig hela vägen med en logotyp som anpassas noggrant efter ditt företag eller projekt.',
 	},
 	{
 		icon: './static/icons/facebook.svg',

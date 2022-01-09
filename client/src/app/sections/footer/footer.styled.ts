@@ -3,18 +3,19 @@ import styled from 'styled-components';
 import { Container } from 'components';
 
 const Footer = styled('footer')`
-	padding: 50px 0;
+	padding: 20px 0;
 	background-color: #333;
 	border-top: 1px solid #3d3d3d;
 `;
 
 const FooterContent = styled(Container)`
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 	color: #919191;
 
 	@media (max-width: 480px) {
+		padding: 20px 0;
 		flex-direction: column;
 	}
 `;
@@ -22,11 +23,14 @@ const FooterContent = styled(Container)`
 const Icons = styled('div')`
 	display: flex;
 	gap: 20px;
-	margin-bottom: 25px;
 
 	a img {
 		width: 30px;
 		height: 30px;
+	}
+
+	@media (max-width: 480px) {
+		margin-top: 20px;
 	}
 `;
 

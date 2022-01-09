@@ -7,8 +7,6 @@ client/build
 client/.env
 
 # server
-server/bin
-server/obj
-server/Properties/launchSettings.json
-server/wwwroot
+server/node_modules
+server/.env
 

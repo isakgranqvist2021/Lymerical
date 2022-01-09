@@ -2,16 +2,7 @@ import { ContactModel } from 'models';
 
 import { GET, POST } from 'services/http';
 
-import { GetProjects, PostContact } from './api.types';
-
-export const getProjects = async (
-	signal?: AbortSignal
-): Promise<GetProjects> => {
-	return await GET({
-		endpoint: '/projects',
-		signal,
-	});
-};
+import { PostContact, GetInstagramPosts } from './api.types';
 
 export const postContact = async (
 	body: ContactModel,
@@ -22,4 +13,8 @@ export const postContact = async (
 		body,
 		signal,
 	});
+};
+
+export const fetchInstagramPhotos = async (): Promise<GetInstagramPosts> => {
+	return await GET({ endpoint: '/instagram' });
 };

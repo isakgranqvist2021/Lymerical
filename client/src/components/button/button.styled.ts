@@ -15,6 +15,7 @@ const button = css<ButtonProps>`
 	font-family: 'Arial';
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 	min-width: 100px;
+	border-radius: 1rem;
 
 	${(props) =>
 		props.disabled &&

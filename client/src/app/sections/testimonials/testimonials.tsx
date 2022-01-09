@@ -13,9 +13,9 @@ export const Testimonials = () => {
 				<Text text='Vad våra kunder säger om oss' variant='h2' />
 
 				<Swiper breakpoints={BREAKPOINTS} navigation modules={[Navigation]}>
-					{TESTIMONIALS.map((testimonial) => {
+					{TESTIMONIALS.map((testimonial, i) => {
 						return (
-							<SwiperSlide>
+							<SwiperSlide key={i}>
 								<Styled.Slide>
 									<img src={testimonial.logo} alt='' />
 									<Text text={testimonial.name} variant='h3' />

@@ -1,25 +1,31 @@
 export const TESTIMONIALS = [
 	{
-		logo: 'https://i.pravatar.cc/150?img=44',
-		name: 'Anna Larsson',
+		logo: 'https://i.pravatar.cc/150?img=33',
+		name: 'Valentina L',
 		body: '“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente dolorum ipsa iste amet consequuntur ”',
 		rating: '',
 	},
 	{
 		logo: 'https://i.pravatar.cc/150?img=36',
-		name: 'Matilda Persson',
+		name: 'Julia T',
 		body: '” Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente dolorum ipsa iste amet consequuntur ”',
 		rating: '',
 	},
 	{
 		logo: 'https://i.pravatar.cc/150?img=25',
-		name: 'Anna Larsson',
-		body: '” Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente dolorum ipsa iste amet consequuntur ”',
+		name: 'Dung P',
+		body: '” Lymercial !! Nok Malmøs bedste digitale marketingbureau! Vi har arbejdet med dem siden 2019, og det er vi taknemmelige for! Tak for alt! ”',
 		rating: '',
 	},
 	{
 		logo: 'https://i.pravatar.cc/150?img=8',
-		name: 'Isak Granqvist',
+		name: 'Isak G',
+		body: '” Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente dolorum ipsa iste amet consequuntur ”',
+		rating: '',
+	},
+	{
+		logo: 'https://i.pravatar.cc/150?img=32',
+		name: 'Hanna T',
 		body: '” Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente dolorum ipsa iste amet consequuntur ”',
 		rating: '',
 	},

@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { InputProps } from './input.types';
+import { SelectProps } from './select.types';
 
-const Input = styled('input')<InputProps>`
+const Select = styled('select')<SelectProps>`
 	width: 100%;
 	padding: 0.66rem;
 	border: 1px solid lightgray;
@@ -16,5 +16,6 @@ const Input = styled('input')<InputProps>`
 			border-color: #cf3030 !important;
 		`}
 `;
+const Option = styled('option')``;
 
-export const Styled = { Input };
+export const Styled = { Select, Option };

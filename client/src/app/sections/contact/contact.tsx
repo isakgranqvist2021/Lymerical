@@ -7,6 +7,7 @@ import {
 	Input,
 	Label,
 	Textarea,
+	Select,
 	Text,
 	Spinner,
 	Icon,
@@ -40,21 +41,21 @@ export const Contact = () => {
 						<Icon icon='phone' />
 						<Styled.Col>
 							<Text text='Telefon:' variant='body2' />
-							<Text text='+46739986177' variant='subtitle2' />
+							<Text text='+46763168976' variant='subtitle2' />
 						</Styled.Col>
 					</Styled.Group>
 					<Styled.Group>
 						<Icon icon='email' />
 						<Styled.Col>
 							<Text text='Email:' variant='body2' />
-							<Text text='email@email.com' variant='subtitle2' />
+							<Text text='lymerical@gmail.com' variant='subtitle2' />
 						</Styled.Col>
 					</Styled.Group>
 					<Styled.Group>
 						<Icon icon='place' />
 						<Styled.Col>
 							<Text text='Adress:' variant='body2' />
-							<Text text='New York, Manhattan' variant='subtitle2' />
+							<Text text='Sweden, Malmö' variant='subtitle2' />
 						</Styled.Col>
 					</Styled.Group>
 				</Styled.ContactDetails>
@@ -81,6 +82,22 @@ export const Contact = () => {
 							autoComplete='name'
 							disabled={isLoading}
 							onChange={(e) => setValue('name', e.target.value)}
+						/>
+					</FormGroup>
+					<FormGroup mb={32}>
+						<Label htmlFor='inquiry'>Kontakt Orsak</Label>
+						<Select
+							id='inquiry'
+							disabled={isLoading}
+							value={values.inquiry}
+							onChange={(e) => setValue('inquiry', e.target.value)}
+							hasError={fieldWithError === 'inquiry'}
+							options={[
+								{ text: 'Sociala Medier', value: 'social_media' },
+								{ text: 'Logotyper', value: 'logo' },
+								{ text: 'Marknadsföring', value: 'marketing' },
+								{ text: 'Övrigt', value: 'other' },
+							]}
 						/>
 					</FormGroup>
 					<FormGroup mb={10}>

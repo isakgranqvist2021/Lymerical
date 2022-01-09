@@ -49,7 +49,6 @@ export const Hero = () => {
 
 				<Button
 					aria-label='Bring me to contact'
-					outlined
 					data-aos='fade-right'
 					onClick={() => onClickHandler('#Contact')}>
 					Kontakta Oss

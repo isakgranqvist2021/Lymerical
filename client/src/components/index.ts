@@ -7,6 +7,7 @@ export * from './input';
 export * from './label';
 export * from './link';
 export * from './modal';
+export * from './select';
 export * from './spinner';
 export * from './text';
 export * from './textarea';

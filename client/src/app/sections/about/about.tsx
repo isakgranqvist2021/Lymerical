@@ -25,9 +25,9 @@ export const About = () => {
 
 				<Button
 					onClick={() => {
-						window.location.hash = '#Portfolio';
+						window.location.hash = '#Contact';
 					}}>
-					Tidigare arbeten
+					Kontakta Oss
 				</Button>
 			</Styled.AboutContainer>
 		</Styled.About>

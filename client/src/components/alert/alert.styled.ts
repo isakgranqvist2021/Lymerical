@@ -9,6 +9,7 @@ const Alert = styled('div')<StyledAlertProps>`
 	width: 100%;
 	padding: 0.75rem 1rem;
 	margin-bottom: 1rem;
+	border-radius: 1rem;
 
 	span {
 		cursor: pointer;

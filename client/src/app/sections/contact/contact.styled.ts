@@ -25,11 +25,6 @@ const Form = styled('form')`
 	width: 100%;
 	margin-right: 50px;
 
-	input,
-	textarea {
-		border: 1px solid lightgray;
-	}
-
 	label {
 		color: #333;
 	}

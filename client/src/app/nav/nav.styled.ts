@@ -11,6 +11,7 @@ const Nav = styled('nav')`
 	z-index: 10;
 	width: 100%;
 	border-bottom: 1px solid #ed902d;
+
 	.container {
 		height: inherit;
 		display: flex;
@@ -135,17 +136,8 @@ const Backdrop = styled('div')<NavState>`
 
 const Logo = styled('img')`
 	display: block;
-	height: 100%;
 	max-width: 200px;
-
-	@media (max-width: ${MOBILE_NAV_BREAKPOINT}) {
-		display: block;
-		height: 50%;
-	}
-
-	@media (max-width: 400px) {
-		max-width: 150px;
-	}
+	max-height: 40px;
 `;
 
 const Bars = {

@@ -7,7 +7,8 @@ const Label = styled('label')`
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 600;
-	font-size: 0.9rem;
+	font-size: 0.82rem;
+	letter-spacing: 0.8px;
 `;
 
 export const Styled = { Label };

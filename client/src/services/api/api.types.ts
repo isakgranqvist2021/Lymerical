@@ -7,6 +7,6 @@ export interface PostContact extends HttpRequest {
 	data: null;
 }
 
-export interface GetProjects extends HttpRequest {
-	data: any;
+export interface GetInstagramPosts extends HttpRequest {
+	data: string[];
 }

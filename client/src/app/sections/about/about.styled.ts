@@ -17,6 +17,10 @@ const About = styled('div')`
 	p {
 		margin-bottom: 20px;
 	}
+
+	h2 {
+		text-transform: capitalize;
+	}
 `;
 
 const AboutContainer = styled(Container)`
