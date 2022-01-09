@@ -4,7 +4,6 @@ module.exports = async (req, res) => {
 	try {
 		const { email, name, inquiry, message } = req.body;
 
-		console.log(req.body);
 		let testAccount = await nodemailer.createTestAccount();
 
 		let transporter = nodemailer.createTransport({
