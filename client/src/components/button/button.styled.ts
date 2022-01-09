@@ -30,24 +30,24 @@ const button = css<ButtonProps>`
 const primary = styled('button')<ButtonProps>`
 	${button};
 
-	background-color: #cf3030;
-	border-color: #cf3030;
+	background-color: #ed902d;
+	border-color: #ed902d;
 	color: #fff;
 
 	&:hover {
 		background-color: transparent;
-		color: #cf3030;
+		color: #ed902d;
 	}
 
 	${(props) =>
 		props.outlined &&
 		css`
 			background-color: transparent;
-			border-color: #cf3030;
-			color: #cf3030;
+			border-color: #ed902d;
+			color: #ed902d;
 
 			&:hover {
-				background-color: #cf3030;
+				background-color: #ed902d;
 				color: #fff;
 			}
 		`}

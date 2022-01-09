@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Spinner = styled('div')`
 	border: 2px solid #fff;
-	border-top: 2px solid rgb(207, 48, 48);
+	border-top: 2px solid #ed902d;
 	border-radius: 50%;
 	animation: spin 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 	width: 15px;

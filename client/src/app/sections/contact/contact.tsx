@@ -48,7 +48,7 @@ export const Contact = () => {
 						/>
 					</FormGroup>
 					<FormGroup mb={32}>
-						<Label htmlFor='name'>Full Name</Label>
+						<Label htmlFor='name'>Ditt Namn</Label>
 						<Input
 							id='name'
 							placeholder='Your name'
@@ -60,7 +60,7 @@ export const Contact = () => {
 						/>
 					</FormGroup>
 					<FormGroup mb={10}>
-						<Label htmlFor='message'>Message</Label>
+						<Label htmlFor='message'>Meddelande</Label>
 						<Textarea
 							id='message'
 							placeholder='Message'
@@ -77,39 +77,24 @@ export const Contact = () => {
 						variant='primary'
 						disabled={isLoading}
 						onClick={submit}>
-						{isLoading ? <Spinner /> : 'Send Message'}
+						{isLoading ? <Spinner /> : 'Skicka Meddelande'}
 					</Styled.SendButton>
 				</Styled.Form>
 				<Styled.Social aria-label='Social media icons'>
 					<Text
 						variant='h3'
-						text='You can also reach me through my social channels'
+						text='Du kan även hitta mig här på sociala medier'
 						data-aos='fade-left'
 					/>
 
 					<Styled.SocialIcons data-aos='fade-up'>
-						<a
-							aria-label='Instagram link'
-							href='https://www.instagram.com/isakgranqvist2021/'
-							title='Instagram'>
+						<a aria-label='Instagram link' href='' title='Instagram'>
 							<img src='/static/icons/instagram.svg' alt='Instagram Icon' />
 						</a>
-						<a
-							aria-label='Linkedin link'
-							href='https://www.linkedin.com/in/isak-granqvist-b1217a207/'
-							title='Linkedin'>
+						<a aria-label='Linkedin link' href='' title='Linkedin'>
 							<img src='/static/icons/linkedin.svg' alt='Linkedin Icon' />
 						</a>
-						<a
-							aria-label='Github link'
-							href='https://github.com/isakgranqvist2021'
-							title='Github'>
-							<img src='/static/icons/github.svg' alt='Github Icon' />
-						</a>
-						<a
-							aria-label='Email me link'
-							href='mailto:contact@isakgranqvist.com'
-							title='Send mail'>
+						<a aria-label='Email me link' href='' title='Send mail'>
 							<img src='/static/icons/email.svg' alt='Email Icon' />
 						</a>
 					</Styled.SocialIcons>

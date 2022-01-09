@@ -4,7 +4,7 @@ import { MOBILE_NAV_BREAKPOINT } from './nav.constants';
 import { NavState } from './nav.types';
 
 const Nav = styled('nav')`
-	background-color: rgb(207, 48, 48);
+	background-color: #ed902d;
 	height: 80px;
 	position: fixed;
 	top: 0;

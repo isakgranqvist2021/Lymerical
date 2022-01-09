@@ -56,7 +56,7 @@ const Modal = {
 	`,
 	Header: styled('div')`
 		padding: 1rem;
-		background-color: rgb(207, 48, 48);
+		background-color: #ed902d;
 		color: #fff;
 		display: flex;
 		justify-content: space-between;

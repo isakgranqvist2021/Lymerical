@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { LinkProps } from './link.types';
 
 const Link = styled('a')<LinkProps>`
-	color: rgb(207, 48, 48);
+	color: #ed902d;
 	text-decoration: none;
 
 	&:hover {

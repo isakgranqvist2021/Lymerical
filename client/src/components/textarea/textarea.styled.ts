@@ -14,7 +14,7 @@ const Textarea = styled('textarea')<TextareaProps>`
 	${(props) =>
 		props.hasError &&
 		css`
-			border-color: rgb(207, 48, 48) !important;
+			border-color: #ed902d !important;
 		`}
 `;
 
