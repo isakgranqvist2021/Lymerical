@@ -1,57 +1,17 @@
 const express = require('express');
-const ig = require('instagram-scraping');
-const fs = require('fs');
-const path = require('path');
+const rateLimit = require('express-rate-limit');
 
 const router = express.Router();
 
-router.get('/update-cache/:username', async (req, res) => {
-	try {
-		const result = await ig.scrapeUserPage(req.params.username);
-
-		const data = result.medias.map(({ node }) => {
-			return node.thumbnail_src;
-		});
-
-		fs.writeFileSync(
-			path.resolve('./data/instagram.json'),
-			JSON.stringify(data)
-		);
-
-		return res.send('Updated');
-	} catch (err) {
-		console.log(err);
-		return res.json('Error');
-	}
+const limiter = rateLimit({
+	windowMs: 15 * 60 * 1000, // 15 minutes
+	max: 3, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+	standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 
-router.get('/instagram', async (req, res) => {
-	try {
-		const buffer = fs.readFileSync(path.resolve('./data/instagram.json'));
-		const data = JSON.parse(buffer.toString());
-
-		if (!data.length) throw new Error('empty array');
-
-		return res.json({
-			message: '',
-			success: true,
-			data: [],
-		});
-	} catch (err) {
-		return res.json({
-			message: err.message,
-			success: false,
-			data: null,
-		});
-	}
-});
-
-router.post('/contact', (req, res) => {
-	return res.json({
-		message: 'ditt meddelande har skickats',
-		success: true,
-		data: null,
-	});
-});
+router.get('/update-cache/:username', require('./controllers/update-cache'));
+router.get('/instagram', require('./controllers/instagram-posts'));
+router.post('/contact', limiter, require('./controllers/contact'));
 
 module.exports = router;

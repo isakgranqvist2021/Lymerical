@@ -12,6 +12,8 @@
 	"dependencies": {
 		"cors": "^2.8.5",
 		"express": "^4.17.2",
-		"instagram-scraping": "^1.0.17"
+		"express-rate-limit": "^6.0.5",
+		"instagram-scraping": "^1.0.17",
+		"nodemailer": "^6.7.2"
 	}
 }
