@@ -13,10 +13,12 @@ const Grid = styled('div')`
 
 const GridItem = styled('div')`
 	color: #fff;
+	text-align: center;
+	margin: 0 auto;
 
-	@media (max-width: 826px) {
-		text-align: center;
-		margin: 0 auto;
+	img {
+		width: 50px;
+		height: 50px;
 	}
 
 	p {

@@ -17,9 +17,10 @@ export const About = () => {
 			<Styled.AboutContainer>
 				<Text text='Välkommen!' variant='h2' data-aos='fade-down' />
 				<Text variant='body1' data-aos='fade-up'>
-					Warg Media är ditt företags nya raketbränsle som sätter kunden i
-					fokus. Vår kärna är att utveckla webbplatser och andra digitaliserade
-					lösningar som garanterar dig ett ökat resultat!
+					Välkommen till oss på Ly Mercial - en digital marknadsföringsbyrå i
+					Malmö som ökar din försäljning. Vi är redo att välkomna ert företag
+					till den digitala världen! Är ni det? Tveka inte, Kontakta oss redan
+					idag!
 				</Text>
 
 				<Button

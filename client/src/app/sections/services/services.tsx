@@ -10,6 +10,7 @@ export const Services = () => {
 				<Styled.Grid>
 					{SERVICES.map((service, i) => (
 						<Styled.GridItem key={i}>
+							<img src={service.icon} alt={service.title} />
 							<Text variant='h3' text={service.title} />
 							<Text variant='body2' text={service.body} />
 						</Styled.GridItem>
