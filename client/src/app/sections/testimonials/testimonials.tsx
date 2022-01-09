@@ -3,7 +3,7 @@ import { Navigation } from 'swiper';
 
 import { Container, Text } from 'components';
 
-import { TESTIMONIALS } from './testimonials.constants';
+import { TESTIMONIALS, BREAKPOINTS } from './testimonials.constants';
 import { Styled } from './testimonials.styled';
 
 export const Testimonials = () => {
@@ -12,11 +12,7 @@ export const Testimonials = () => {
 			<Container>
 				<Text text='Vad våra kunder säger om oss' variant='h2' />
 
-				<Swiper
-					spaceBetween={50}
-					slidesPerView={3}
-					navigation
-					modules={[Navigation]}>
+				<Swiper breakpoints={BREAKPOINTS} navigation modules={[Navigation]}>
 					{TESTIMONIALS.map((testimonial) => {
 						return (
 							<SwiperSlide>

@@ -80,7 +80,8 @@ const ContactDetails = styled('div')`
 
 	@media (max-width: 980px) {
 		flex-direction: row;
-		justify-content: center;
+		justify-content: flex-start;
+		flex-wrap: wrap;
 		margin-bottom: 50px;
 	}
 `;

@@ -24,3 +24,18 @@ export const TESTIMONIALS = [
 		rating: '',
 	},
 ];
+
+export const BREAKPOINTS = {
+	'0': {
+		slidesPerView: 1,
+		spaceBetween: 20,
+	},
+	'1000': {
+		slidesPerView: 2,
+		spaceBetween: 20,
+	},
+	'1500': {
+		slidesPerView: 3,
+		spaceBetween: 40,
+	},
+};
