@@ -34,52 +34,6 @@ export const Contact = () => {
 	return (
 		<Styled.Contact id='Contact' aria-label='Contact section' tabIndex={4}>
 			<Styled.ContactContainer>
-				<Styled.Form data-aos='fade-right' aria-label='Contact form'>
-					<FormGroup mb={32}>
-						<Label htmlFor='email'>Email</Label>
-						<Input
-							id='email'
-							placeholder='Email'
-							autoComplete='email'
-							hasError={fieldWithError === 'email'}
-							disabled={isLoading}
-							value={values.email}
-							onChange={(e) => setValue('email', e.target.value)}
-						/>
-					</FormGroup>
-					<FormGroup mb={32}>
-						<Label htmlFor='name'>Ditt Namn</Label>
-						<Input
-							id='name'
-							placeholder='Your name'
-							hasError={fieldWithError === 'name'}
-							value={values.name}
-							autoComplete='name'
-							disabled={isLoading}
-							onChange={(e) => setValue('name', e.target.value)}
-						/>
-					</FormGroup>
-					<FormGroup mb={10}>
-						<Label htmlFor='message'>Meddelande</Label>
-						<Textarea
-							id='message'
-							placeholder='Message'
-							hasError={fieldWithError === 'message'}
-							value={values.message}
-							disabled={isLoading}
-							onChange={(e) => setValue('message', e.target.value)}></Textarea>
-					</FormGroup>
-
-					<Alert alert={alert} onClose={clearAlert} />
-
-					<Styled.SendButton
-						outlined
-						variant='primary'
-						disabled={isLoading}
-						onClick={submit}>
-						{isLoading ? <Spinner /> : 'Skicka Meddelande'}
-					</Styled.SendButton>
-				</Styled.Form>
 				<Styled.Social aria-label='Social media icons'>
 					<Text
 						variant='h3'
@@ -99,6 +53,52 @@ export const Contact = () => {
 						</a>
 					</Styled.SocialIcons>
 				</Styled.Social>
+				<Styled.Form data-aos='fade-right' aria-label='Contact form'>
+					<FormGroup mb={32}>
+						<Label htmlFor='email'>Email</Label>
+						<Input
+							id='email'
+							placeholder='Email'
+							autoComplete='email'
+							hasError={fieldWithError === 'email'}
+							disabled={isLoading}
+							value={values.email}
+							onChange={(e) => setValue('email', e.target.value)}
+						/>
+					</FormGroup>
+					<FormGroup mb={32}>
+						<Label htmlFor='name'>Ditt Namn</Label>
+						<Input
+							id='name'
+							placeholder='Ditt namn'
+							hasError={fieldWithError === 'name'}
+							value={values.name}
+							autoComplete='name'
+							disabled={isLoading}
+							onChange={(e) => setValue('name', e.target.value)}
+						/>
+					</FormGroup>
+					<FormGroup mb={10}>
+						<Label htmlFor='message'>Meddelande</Label>
+						<Textarea
+							id='message'
+							placeholder='Meddelande'
+							hasError={fieldWithError === 'message'}
+							value={values.message}
+							disabled={isLoading}
+							onChange={(e) => setValue('message', e.target.value)}></Textarea>
+					</FormGroup>
+
+					<Alert alert={alert} onClose={clearAlert} />
+
+					<Styled.SendButton
+						outlined
+						variant='primary'
+						disabled={isLoading}
+						onClick={submit}>
+						{isLoading ? <Spinner /> : 'Skicka Meddelande'}
+					</Styled.SendButton>
+				</Styled.Form>
 			</Styled.ContactContainer>
 		</Styled.Contact>
 	);

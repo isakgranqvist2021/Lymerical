@@ -11,13 +11,28 @@ const Hero = styled('div')`
 	}
 
 	@media (max-width: 600px) {
-		padding: 50px 0;
+		padding: 150px 0;
 	}
 `;
 
-const HeroContainer = styled(Container)``;
+const HeroContainer = styled(Container)`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+`;
+
+const CompanyLogo = styled('img')`
+	max-width: 300px;
+
+	@media (max-width: 320px) {
+		max-width: 90%;
+	}
+`;
 
 export const Styled = {
+	CompanyLogo,
 	Hero,
 	HeroContainer,
 };

@@ -4,21 +4,18 @@ import { MOBILE_NAV_BREAKPOINT } from './nav.constants';
 import { NavState } from './nav.types';
 
 const Nav = styled('nav')`
-	background-color: #ed902d;
+	background-color: #fff;
 	height: 80px;
 	position: fixed;
 	top: 0;
 	z-index: 10;
 	width: 100%;
-
+	border-bottom: 1px solid #ed902d;
 	.container {
 		height: inherit;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-
-		@media (max-width: ${MOBILE_NAV_BREAKPOINT}) {
-		}
 	}
 
 	@media (max-width: ${MOBILE_NAV_BREAKPOINT}) {
@@ -58,7 +55,7 @@ const NavLinks = styled('div')<NavState>`
 `;
 
 const Link = styled('a')`
-	color: #fff;
+	color: #ed902d;
 	text-transform: uppercase;
 	display: inline-block;
 	text-decoration: none;
@@ -71,7 +68,7 @@ const Link = styled('a')`
 	&::before,
 	&::after {
 		content: '';
-		background-color: #fff;
+		background-color: #ed902d;
 		height: 2px;
 		position: absolute;
 		width: 0;
@@ -145,6 +142,10 @@ const Logo = styled('img')`
 		display: block;
 		height: 50%;
 	}
+
+	@media (max-width: 400px) {
+		max-width: 150px;
+	}
 `;
 
 const Bars = {
@@ -162,7 +163,7 @@ const Bars = {
 	Line: styled('div')<NavState>`
 		height: 3px;
 		width: 100%;
-		background-color: #fff;
+		background-color: #ed902d;
 		transition-property: all;
 		transition-duration: 300ms;
 		transition-timing-function: cubic-bezier(0.6, -0.4, 0.735, 0.045);

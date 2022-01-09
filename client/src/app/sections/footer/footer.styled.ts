@@ -16,10 +16,6 @@ const FooterContent = styled(Container)`
 
 	@media (max-width: 480px) {
 		flex-direction: column;
-
-		p {
-			margin-top: 20px;
-		}
 	}
 `;
 

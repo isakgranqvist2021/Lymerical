@@ -12,9 +12,9 @@ export const Nav = () => {
 			<Container className='container'>
 				<a href='#Home' aria-label='Top of the page link'>
 					<Styled.Logo
-						aria-label='isakgranqvist.com company logo'
-						src='/static/images/logo.svg'
-						alt='Isak Granqvist Logo'
+						aria-label='Lymerical company logo'
+						src='/static/images/logo.png'
+						alt='Lymerical Logo'
 					/>
 				</a>
 				<Styled.NavLinks open={navIsOpen}>

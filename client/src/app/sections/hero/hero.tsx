@@ -20,7 +20,7 @@ export const Hero = () => {
 		<Styled.Hero id='Home' aria-label='Hero section' tabIndex={0}>
 			<Styled.HeroContainer>
 				<Text variant='h1'>
-					Lymerical
+					<Styled.CompanyLogo src='./static/images/logo.png' />
 					<br />
 				</Text>
 

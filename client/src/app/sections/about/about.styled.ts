@@ -23,11 +23,16 @@ const About = styled('div')`
 const AboutContainer = styled(Container)`
 	text-align: center;
 	height: 100%;
-	width: 55%;
+	max-width: 55%;
 
 	@media (max-width: 900px) {
 		flex-direction: column;
 		gap: 3rem;
+		max-width: 75%;
+	}
+
+	@media (max-width: 900px) {
+		max-width: 90%;
 	}
 `;
 

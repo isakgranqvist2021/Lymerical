@@ -16,7 +16,7 @@ const ContactContainer = styled(Container)`
 	display: flex;
 
 	@media (max-width: 1100px) {
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 
 	@media (max-width: 600px) {
@@ -44,7 +44,7 @@ const Form = styled('form')`
 
 const Social = styled('div')`
 	width: 100%;
-	margin-left: 50px;
+	margin-right: 50px;
 
 	h3 {
 		font-size: 3rem;
@@ -56,7 +56,7 @@ const Social = styled('div')`
 		margin: 0 0 100px 0 !important;
 		text-align: center;
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 
 	@media (max-width: 1100px) {
