@@ -23,17 +23,11 @@ export const App = () => {
 			<GlobalStyles />
 
 			<Nav />
-
 			<Hero />
-
 			<About />
-
 			<Services />
-
 			<Portfolio />
-
 			<Testimonials />
-
 			<Contact />
 
 			<Footer />
