@@ -13,7 +13,8 @@ const Contact = styled('div')`
 `;
 
 const ContactContainer = styled(Container)`
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 
 	@media (max-width: 1100px) {
 		flex-direction: column;
@@ -70,48 +71,41 @@ const Social = styled('div')`
 	}
 `;
 
-const SocialIcons = styled('div')`
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 20px;
-
-	a {
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-		padding: 1rem;
-		border-radius: 50%;
-		transition: all 200ms ease;
-
-		&:hover {
-			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-				0 10px 10px rgba(0, 0, 0, 0.22);
-		}
-
-		&:not(:last-of-type) {
-			margin-right: 1rem;
-		}
-
-		img {
-			height: 32px;
-			width: 32px;
-			display: block;
-		}
-	}
-
-	@media (max-width: 1100px) {
-		justify-content: center;
-		margin-top: 50px;
-	}
-
-	@media (max-width: 500px) {
-		a {
-			margin-bottom: 10px;
-		}
-	}
-`;
-
 const SendButton = styled(Button)`
 	display: block;
 	margin-left: auto;
+`;
+
+const ContactDetails = styled('div')`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+`;
+
+const Group = styled('div')`
+	display: flex;
+
+	p {
+		margin: 5px 0 !important;
+		line-height: 1;
+
+		&:first-of-type {
+			color: #ed902d;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+	}
+
+	span {
+		margin: 5px 10px 0 0;
+		color: #ed902d;
+	}
+`;
+
+const Col = styled('div')`
+	display: flex;
+	flex-direction: column;
 `;
 
 export const Styled = {
@@ -120,5 +114,7 @@ export const Styled = {
 	Form,
 	Social,
 	SendButton,
-	SocialIcons,
+	ContactDetails,
+	Group,
+	Col,
 };

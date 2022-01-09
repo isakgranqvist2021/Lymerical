@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import { Container } from 'components';
 
 const Footer = styled('footer')`
-	padding: 20px 0;
+	padding: 50px 0;
 	background-color: #333;
 	border-top: 1px solid #3d3d3d;
 `;
 
 const FooterContent = styled(Container)`
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
 	color: #919191;
 
@@ -19,30 +19,15 @@ const FooterContent = styled(Container)`
 	}
 `;
 
-const LinkGroup = styled('div')`
+const Icons = styled('div')`
 	display: flex;
+	gap: 20px;
+	margin-bottom: 25px;
 
-	a {
-		line-height: 1.4;
-		color: #919191;
-		text-decoration: none;
-		cursor: pointer;
-
-		&:hover {
-			text-decoration: underline;
-		}
-
-		&:not(:last-of-type) {
-			margin-right: 20px;
-		}
-	}
-
-	@media (max-width: 480px) {
-		a {
-			display: block;
-			margin: 20px 0;
-		}
+	a img {
+		width: 30px;
+		height: 30px;
 	}
 `;
 
-export const Styled = { Footer, FooterContent, LinkGroup };
+export const Styled = { Footer, FooterContent, Icons };

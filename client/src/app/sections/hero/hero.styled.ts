@@ -3,8 +3,13 @@ import styled from 'styled-components';
 import { Container } from 'components';
 
 const Hero = styled('div')`
-	padding: 310px 0;
+	height: 100vh;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 
 	@media (max-width: 950px) {
 		padding: 160px 0;
@@ -21,6 +26,12 @@ const HeroContainer = styled(Container)`
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+
+	p {
+		color: #fff;
+		font-weight: 900;
+		font-size: 2rem;
+	}
 `;
 
 const CompanyLogo = styled('img')`
