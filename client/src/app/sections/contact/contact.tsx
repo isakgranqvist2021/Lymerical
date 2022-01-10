@@ -103,8 +103,12 @@ export const Contact = () => {
 
 				<Styled.ContactDetails>
 					<Styled.Group>
-						<Icon icon='phone' />
+						<img
+							src='./static/icons/1676-telephone-call-hand-outline.gif'
+							alt=''
+						/>
 						<Styled.Col>
+							<Text text='Telefon:' variant='body2' />
 							<Text text='+46 76 316 89 76' variant='subtitle2' />
 						</Styled.Col>
 					</Styled.Group>

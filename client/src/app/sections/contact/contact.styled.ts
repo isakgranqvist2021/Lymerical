@@ -76,9 +76,9 @@ const Group = styled('div')`
 	}
 
 	img {
-		width: 25px;
+		width: 50px;
 		margin: 0 10px 0 0;
-		height: 25px;
+		height: 50px;
 	}
 `;
 
