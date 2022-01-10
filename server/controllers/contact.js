@@ -1,28 +1,25 @@
-const nodemailer = require('nodemailer');
+const sgMail = require('@sendgrid/mail');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 module.exports = async (req, res) => {
 	try {
 		const { email, name, inquiry, message } = req.body;
 
-		let testAccount = await nodemailer.createTestAccount();
+		const msg = {
+			to: 'test@example.com', // Change to your recipient
+			from: 'test@example.com', // Change to your verified sender
+			subject: 'Sending with SendGrid is Fun',
+			text: 'and easy to do anywhere, even with Node.js',
+			html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+		};
 
-		let transporter = nodemailer.createTransport({
-			host: 'smtp.ethereal.email',
-			port: 587,
-			secure: false, // true for 465, false for other ports
-			auth: {
-				user: testAccount.user, // generated ethereal user
-				pass: testAccount.pass, // generated ethereal password
-			},
-		});
+		const response = await sgMail.send(msg);
 
-		await transporter.sendMail({
-			from: '"Fred Foo 👻" <foo@example.com>', // sender address
-			to: 'bar@example.com, baz@example.com', // list of receivers
-			subject: 'Hello ✔', // Subject line
-			text: 'Hello world?', // plain text body
-			html: '<b>Hello world?</b>', // html body
-		});
+		console.log(response);
 
 		return res.json({
 			message: 'ditt meddelande har skickats',

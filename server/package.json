@@ -10,10 +10,11 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@sendgrid/mail": "^7.6.0",
 		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
 		"express": "^4.17.2",
 		"express-rate-limit": "^6.0.5",
-		"instagram-scraping": "^1.0.17",
-		"nodemailer": "^6.7.2"
+		"instagram-scraping": "^1.0.17"
 	}
 }
