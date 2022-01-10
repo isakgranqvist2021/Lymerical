@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
+		"start": "node --experimental-modules --es-module-specifier-resolution=node index.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
@@ -15,6 +17,7 @@
 		"dotenv": "^10.0.0",
 		"express": "^4.17.2",
 		"express-rate-limit": "^6.0.5",
-		"instagram-scraping": "^1.0.17"
+		"instagram-scraping": "^1.0.17",
+		"node-fetch": "^3.1.0"
 	}
 }

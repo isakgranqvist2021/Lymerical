@@ -36,29 +36,8 @@ export const Contact = () => {
 	return (
 		<Styled.Contact id='Contact' aria-label='Contact section' tabIndex={4}>
 			<Styled.ContactContainer>
-				<Styled.ContactDetails>
-					<Styled.Group>
-						<Icon icon='phone' />
-						<Styled.Col>
-							<Text text='Telefon:' variant='body2' />
-							<Text text='+46763168976' variant='subtitle2' />
-						</Styled.Col>
-					</Styled.Group>
-					<Styled.Group>
-						<Icon icon='email' />
-						<Styled.Col>
-							<Text text='Email:' variant='body2' />
-							<Text text='lymerical@gmail.com' variant='subtitle2' />
-						</Styled.Col>
-					</Styled.Group>
-					<Styled.Group>
-						<Icon icon='place' />
-						<Styled.Col>
-							<Text text='Adress:' variant='body2' />
-							<Text text='Sweden, Malmö' variant='subtitle2' />
-						</Styled.Col>
-					</Styled.Group>
-				</Styled.ContactDetails>
+				<Styled.Title>Kontakta Oss</Styled.Title>
+
 				<Styled.Form data-aos='fade-right' aria-label='Contact form'>
 					<FormGroup mb={32}>
 						<Label htmlFor='email'>Email</Label>
@@ -121,6 +100,32 @@ export const Contact = () => {
 						{isLoading ? <Spinner /> : 'Skicka Meddelande'}
 					</Styled.SendButton>
 				</Styled.Form>
+
+				<Styled.ContactDetails>
+					<Styled.Group>
+						<Icon icon='phone' />
+						<Styled.Col>
+							<Text text='+46 76 316 89 76' variant='subtitle2' />
+						</Styled.Col>
+					</Styled.Group>
+					<Styled.Group>
+						<img
+							src='./static/icons/177-envelope-mail-send-outline.gif'
+							alt=''
+						/>
+						<Styled.Col>
+							<Text text='Email:' variant='body2' />
+							<Text text='lymerical@gmail.com' variant='subtitle2' />
+						</Styled.Col>
+					</Styled.Group>
+					<Styled.Group>
+						<img src='./static/icons/18-location-pin-outline.gif' alt='' />
+						<Styled.Col>
+							<Text text='Adress:' variant='body2' />
+							<Text text='Sweden, Malmö' variant='subtitle2' />
+						</Styled.Col>
+					</Styled.Group>
+				</Styled.ContactDetails>
 			</Styled.ContactContainer>
 		</Styled.Contact>
 	);

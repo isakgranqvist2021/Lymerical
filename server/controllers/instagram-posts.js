@@ -1,9 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-module.exports = async (req, res) => {
+export const getInstaPosts = async (req, res) => {
 	try {
-		const buffer = fs.readFileSync(path.resolve('./data/instagram.json'));
+		const buffer = fs.readFileSync(path.resolve('./data/photos.json'));
 		const data = JSON.parse(buffer.toString());
 
 		if (!data.length) throw new Error('empty array');
@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
 		return res.json({
 			message: '',
 			success: true,
-			data: [],
+			data: data.slice(0, 3),
 		});
 	} catch (err) {
 		return res.json({

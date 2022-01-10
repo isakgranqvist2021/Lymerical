@@ -1,3 +1,5 @@
+import { Media } from 'models';
+
 export interface HttpRequest {
 	message: string;
 	success: boolean;
@@ -8,5 +10,5 @@ export interface PostContact extends HttpRequest {
 }
 
 export interface GetInstagramPosts extends HttpRequest {
-	data: string[];
+	data: Media[];
 }

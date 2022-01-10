@@ -5,7 +5,7 @@ import { Container } from 'components';
 const Footer = styled('footer')`
 	padding: 20px 0;
 	background-color: #333;
-	border-top: 1px solid #3d3d3d;
+	border-top: 3px solid #3d3d3d;
 `;
 
 const FooterContent = styled(Container)`

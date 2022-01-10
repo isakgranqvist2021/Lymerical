@@ -1,24 +1,31 @@
 import styled from 'styled-components';
 
-import { Button, Container } from 'components';
+import { Button, Container, Text } from 'components';
 
 const Contact = styled('div')`
 	padding: 100px 0;
 	overflow: hidden;
 	background-color: #fff;
+	width: 50%;
+	margin: 0 auto;
 
 	@media (max-width: 600px) {
 		padding: 50px 0;
 	}
 `;
 
-const ContactContainer = styled(Container)`
-	display: grid;
-	grid-template-columns: 1fr 2fr;
+const Title = styled('h2')`
+	font-size: 4rem !important;
+	text-transform: capitalize !important;
+	margin-bottom: 50px !important;
+	text-align: center;
+	font-weight: 900;
+	color: #ed902d;
+`;
 
-	@media (max-width: 980px) {
-		grid-template-columns: 1fr;
-	}
+const ContactContainer = styled(Container)`
+	display: flex;
+	flex-direction: column;
 `;
 
 const Form = styled('form')`
@@ -34,34 +41,6 @@ const Form = styled('form')`
 	}
 `;
 
-const Social = styled('div')`
-	width: 100%;
-	margin-right: 50px;
-
-	h3 {
-		font-size: 3rem;
-		font-weight: 900;
-		color: #333;
-	}
-
-	@media (max-width: 1100px) {
-		margin: 0 0 100px 0 !important;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-	}
-
-	@media (max-width: 1100px) {
-		margin: 0 0 50px 0 !important;
-	}
-
-	@media (max-width: 500px) {
-		h3 {
-			font-size: 2rem;
-		}
-	}
-`;
-
 const SendButton = styled(Button)`
 	display: block;
 	margin-left: auto;
@@ -70,7 +49,8 @@ const SendButton = styled(Button)`
 const ContactDetails = styled('div')`
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	margin-top: 50px;
 	gap: 25px;
 
 	@media (max-width: 980px) {
@@ -95,9 +75,10 @@ const Group = styled('div')`
 		}
 	}
 
-	span {
-		margin: 5px 10px 0 0;
-		color: #ed902d;
+	img {
+		width: 25px;
+		margin: 0 10px 0 0;
+		height: 25px;
 	}
 `;
 
@@ -108,9 +89,9 @@ const Col = styled('div')`
 
 export const Styled = {
 	Contact,
+	Title,
 	ContactContainer,
 	Form,
-	Social,
 	SendButton,
 	ContactDetails,
 	Group,

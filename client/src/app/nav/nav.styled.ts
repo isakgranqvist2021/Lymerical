@@ -10,7 +10,7 @@ const Nav = styled('nav')`
 	top: 0;
 	z-index: 10;
 	width: 100%;
-	border-bottom: 1px solid #ed902d;
+	border-bottom: 3px solid #ed902d;
 
 	.container {
 		height: inherit;
@@ -103,7 +103,7 @@ const Link = styled('a')`
 		color: #333;
 
 		&:not(:last-of-type) {
-			border-bottom: 1px solid #f5f5f5;
+			border-bottom: 3px solid #f5f5f5;
 		}
 
 		&::before,
