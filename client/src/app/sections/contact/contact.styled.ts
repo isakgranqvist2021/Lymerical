@@ -12,6 +12,27 @@ const Contact = styled('div')`
 	@media (max-width: 600px) {
 		padding: 50px 0;
 	}
+
+	@media (max-width: 1655px) {
+		width: 60%;
+	}
+
+	@media (max-width: 1382px) {
+		width: 70%;
+	}
+
+	@media (max-width: 1186px) {
+		width: 80%;
+	}
+
+	@media (max-width: 1036px) {
+		width: 100%;
+		padding: 100px 50px;
+	}
+
+	@media (max-width: 1036px) {
+		padding: 100px 25px;
+	}
 `;
 
 const Title = styled('h2')`
@@ -21,6 +42,14 @@ const Title = styled('h2')`
 	text-align: center;
 	font-weight: 900;
 	color: #ed902d;
+
+	@media (max-width: 484px) {
+		font-size: 3rem !important;
+	}
+
+	@media (max-width: 372px) {
+		font-size: 2rem !important;
+	}
 `;
 
 const ContactContainer = styled(Container)`

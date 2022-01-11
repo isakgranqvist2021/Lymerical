@@ -11,7 +11,7 @@ export const getInstaPosts = async (req, res) => {
 		return res.json({
 			message: '',
 			success: true,
-			data: data.slice(0, 3),
+			data: data,
 		});
 	} catch (err) {
 		return res.json({

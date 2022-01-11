@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+import { Container, Text } from 'components';
 import { Media } from 'models';
 import { fetchInstagramPhotos } from 'services';
 
@@ -21,10 +22,17 @@ export const Portfolio = () => {
 	if (!instagramPhotos) return <Styled.Hr />;
 
 	return (
-		<Styled.Portfolio id='Portfolio'>
-			{instagramPhotos?.map((photo) => (
-				<Styled.InstagramPost key={photo.id} src={photo.media_url} />
-			))}
-		</Styled.Portfolio>
+		<Container>
+			<Styled.Content>
+				<Text text='Senaste inlägg på instagram' variant='h3' />
+				<Styled.Portfolio id='Portfolio'>
+					{instagramPhotos?.map((photo) => (
+						<Styled.InstagramPost key={photo.id} src={photo.media_url} />
+					))}
+				</Styled.Portfolio>
+
+				<a href='https://www.instagram.com/lymercial/'>Se alla inlägg</a>
+			</Styled.Content>
+		</Container>
 	);
 };
