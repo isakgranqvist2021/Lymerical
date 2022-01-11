@@ -13,8 +13,7 @@ export const Portfolio = () => {
 		(async () => {
 			const res = await fetchInstagramPhotos();
 			if (res.success) {
-				setInstagramPhotos(res.data);
-				console.log(res);
+				setInstagramPhotos(res.data.slice(0, 4));
 			}
 		})();
 	}, []);
@@ -26,12 +25,23 @@ export const Portfolio = () => {
 			<Styled.Content>
 				<Text text='Senaste inlägg på instagram' variant='h3' />
 				<Styled.Portfolio id='Portfolio'>
-					{instagramPhotos?.map((photo) => (
-						<Styled.InstagramPost key={photo.id} src={photo.media_url} />
-					))}
+					{instagramPhotos.map((photo, i) =>
+						!photo.media_url.includes('video') ? (
+							<Styled.InstagramPost key={photo.id} src={photo.media_url} />
+						) : (
+							<Styled.Video key={photo.id} controls>
+								<source src={photo.media_url} />
+							</Styled.Video>
+						)
+					)}
 				</Styled.Portfolio>
 
-				<a href='https://www.instagram.com/lymercial/'>Se alla inlägg</a>
+				<a
+					href='https://www.instagram.com/lymercial/'
+					target='_blank'
+					rel='noreferrer'>
+					Se alla inlägg
+				</a>
 			</Styled.Content>
 		</Container>
 	);

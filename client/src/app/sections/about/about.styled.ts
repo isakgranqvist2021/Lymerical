@@ -8,10 +8,15 @@ const About = styled('div')`
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	background-image: url('./static/images/pexels-tyler-lastovich-997443_1.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-attachment: fixed;
 
 	h2,
 	p {
-		color: #333;
+		color: #fff;
 	}
 
 	p {

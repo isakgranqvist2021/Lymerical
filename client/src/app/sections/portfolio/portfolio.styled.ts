@@ -67,8 +67,24 @@ const InstagramPost = styled('img')`
 	}
 `;
 
+const Video = styled('video')`
+	max-width: 100%;
+	max-height: 300px;
+	flex-grow: 1;
+	object-fit: cover;
+	border: 5px solid #333;
+	border-radius: 1rem;
+	display: block;
+	transition: all 300ms ease;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(0.8);
+	}
+`;
+
 const Hr = styled('div')`
 	border-top: 3px solid #ed902d;
 `;
 
-export const Styled = { Content, Portfolio, InstagramPost, Hr };
+export const Styled = { Content, Portfolio, InstagramPost, Video, Hr };

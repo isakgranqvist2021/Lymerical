@@ -2,13 +2,13 @@ export const TESTIMONIALS = [
 	{
 		logo: 'https://i.pravatar.cc/150?img=33',
 		name: 'Valentina L',
-		body: '“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente dolorum ipsa iste amet consequuntur ”',
+		body: '“ Tack för jättefin logotyp! Är supernöjd och det blev precis så som jag ville ha det! Kommer rekommendera dig till andra, riktigt bra service! ”',
 		rating: '',
 	},
 	{
 		logo: 'https://i.pravatar.cc/150?img=36',
 		name: 'Julia T',
-		body: '” Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente dolorum ipsa iste amet consequuntur ”',
+		body: '” Lymercial har hjälpt oss med våra sociala medier i några månader nu och vi är väldigt nöjda med denna tjänst. Engagerad, flexibel  och professionell! ”',
 		rating: '',
 	},
 	{

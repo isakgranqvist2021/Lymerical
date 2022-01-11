@@ -10,6 +10,7 @@ const Testimonials = styled('div')`
 		margin-bottom: 125px;
 		text-transform: capitalize;
 	}
+
 	.swiper-button-prev,
 	.swiper-button-next {
 		color: #ed902d;

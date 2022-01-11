@@ -7,8 +7,10 @@ export const Select = (props: SelectProps) => {
 	return (
 		<Styled.Select {...rest}>
 			<Styled.Option value=''>Välj en</Styled.Option>
-			{options?.map((option) => (
-				<Styled.Option value={option.value}>{option.text}</Styled.Option>
+			{options?.map((option, i) => (
+				<Styled.Option key={i} value={option.value}>
+					{option.text}
+				</Styled.Option>
 			))}
 		</Styled.Select>
 	);
