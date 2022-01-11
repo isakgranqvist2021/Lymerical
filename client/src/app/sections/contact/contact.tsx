@@ -10,7 +10,6 @@ import {
 	Select,
 	Text,
 	Spinner,
-	Icon,
 } from 'components';
 
 import { useContactState } from './contact.helpers';

@@ -1,5 +1,8 @@
 import express from 'express';
+
+import http from 'http';
 import https from 'https';
+
 import cors from 'cors';
 import dotenv from 'dotenv';
 import fs from 'fs';
@@ -11,14 +14,19 @@ import { getAccessTokenUrl } from './utils';
 
 dotenv.config();
 
-const ssl = {
-	key: fs.readFileSync(path.resolve('./key.pem')).toString(),
-	cert: fs.readFileSync(path.resolve('./cert.pem')).toString(),
-};
-
+let server;
 const app = express();
 
-const server = https.createServer(ssl, app);
+if (process.env.NODE_ENV === 'production') {
+	const ssl = {
+		key: fs.readFileSync(path.resolve('./key.pem')).toString(),
+		cert: fs.readFileSync(path.resolve('./cert.pem')).toString(),
+	};
+
+	server = https.createServer(ssl, app);
+} else {
+	server = http.createServer(app);
+}
 
 app.use(cors());
 app.use(express.json());

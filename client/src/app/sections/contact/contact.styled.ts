@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Button, Container, Text } from 'components';
+import { Button, Container } from 'components';
 
 const Contact = styled('div')`
 	padding: 100px 0;
