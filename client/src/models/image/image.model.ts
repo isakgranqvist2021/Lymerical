@@ -6,4 +6,5 @@ export interface ImageModel {
 export interface Media {
 	id: string;
 	media_url: string;
+	isVideo: boolean;
 }

@@ -26,7 +26,7 @@ export const Portfolio = () => {
 				<Text text='Senaste inlägg på instagram' variant='h3' />
 				<Styled.Portfolio id='Portfolio'>
 					{instagramPhotos.map((photo, i) =>
-						!photo.media_url.includes('video') ? (
+						!photo.isVideo ? (
 							<Styled.InstagramPost key={photo.id} src={photo.media_url} />
 						) : (
 							<Styled.Video key={photo.id} controls>

@@ -29,7 +29,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.use(cors());
+
+app.use('/public', express.static('./public'));
 app.use(express.json());
+
 app.use('/api', router);
 
 server.listen(8080, () => {
