@@ -1,11 +1,12 @@
+import { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import sgMail from '@sendgrid/mail';
 
 dotenv.config();
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
-export const contact = async (req, res) => {
+export const contact = async (req: Request, res: Response) => {
 	try {
 		const { email, name, inquiry, message } = req.body;
 
@@ -28,7 +29,7 @@ export const contact = async (req, res) => {
 			`,
 		};
 
-		const response = await sgMail.send(msg);
+		await sgMail.send(msg);
 
 		return res.json({
 			message: 'ditt meddelande har skickats',

@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"rootDir": "./src",
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "es5",
+		"noImplicitAny": true,
+		"strict": true,
+		"moduleResolution": "node",
+		"sourceMap": false,
+		"outDir": "dist"
+	},
+	"exclude": ["node_modules"]
+}

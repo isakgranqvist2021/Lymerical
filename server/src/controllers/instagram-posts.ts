@@ -1,7 +1,8 @@
+import { Request, Response } from 'express';
 import fs from 'fs';
 import path from 'path';
 
-export const getInstaPosts = async (req, res) => {
+export const getInstaPosts = async (req: Request, res: Response) => {
 	try {
 		const buffer = fs.readFileSync(path.resolve('./data/photos.json'));
 		const data = JSON.parse(buffer.toString());
@@ -13,7 +14,7 @@ export const getInstaPosts = async (req, res) => {
 			success: true,
 			data: data,
 		});
-	} catch (err) {
+	} catch (err: any) {
 		return res.json({
 			message: err.message,
 			success: false,

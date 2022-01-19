@@ -17,7 +17,7 @@ dotenv.config();
 let server;
 const app = express();
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'development') {
 	const ssl = {
 		key: fs.readFileSync(path.resolve('./key.pem')).toString(),
 		cert: fs.readFileSync(path.resolve('./cert.pem')).toString(),
